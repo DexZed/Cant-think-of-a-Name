@@ -1,0 +1,13 @@
+@function spacing ($scale,$pixel){
+@return $scale*$pixel
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(3, 1px);
+    align-items: center;
+    justify-content: space-between;
+}
+.user {
+    @extend .flex;
+}
